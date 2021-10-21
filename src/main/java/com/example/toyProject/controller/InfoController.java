@@ -1,5 +1,7 @@
-package com.example.toyProject;
+package com.example.toyProject.controller;
 
+import com.example.toyProject.domain.InfoVO;
+import com.example.toyProject.service.InfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

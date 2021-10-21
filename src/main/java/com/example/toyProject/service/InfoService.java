@@ -1,5 +1,7 @@
-package com.example.toyProject;
+package com.example.toyProject.service;
 
+import com.example.toyProject.domain.InfoVO;
+import com.example.toyProject.mapper.InfoMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

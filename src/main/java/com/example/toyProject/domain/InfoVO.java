@@ -1,4 +1,4 @@
-package com.example.toyProject;
+package com.example.toyProject.domain;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,5 +7,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class InfoVO {
     String id;
-    String co;
+    String con;
 }

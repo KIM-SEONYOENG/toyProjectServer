@@ -1,4 +1,4 @@
-package com.example.toyProject;
+package com.example.toyProject.config;
 
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;

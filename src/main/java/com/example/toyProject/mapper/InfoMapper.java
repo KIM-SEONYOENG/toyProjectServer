@@ -1,5 +1,6 @@
-package com.example.toyProject;
+package com.example.toyProject.mapper;
 
+import com.example.toyProject.domain.InfoVO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
