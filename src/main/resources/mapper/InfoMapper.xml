@@ -2,6 +2,19 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.demo.InfoMapper">
     <select id="findRoom" resultType="com.example.toyProject.InfoVO">
+        SELECT DISTINCT co FROM info WHERE co=#{co}
+    </select>
+
+    <select id="findUser" resultType="com.example.toyProject.InfoVO">
         SELECT * FROM info WHERE co=#{co}
     </select>
+    
+    <insert id="enterRoom" useGeneratedKeys="false">
+        INSERT INTO info (id, co) VALUES (#{enter.id}, #{enter.com})
+    </insert>
+
+    <delete id="exitRoom">
+        DELETE FROM info WHERE id=#{id}
+    </delete>
+    
 </mapper>
