@@ -7,5 +7,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class InfoVO {
     String id;
-    String con;
+    String co;
 }

@@ -12,8 +12,12 @@ public class InfoService {
     @Autowired
     InfoMapper infoDao;
 
+    public List<InfoVO> findAll() {
+        return infoDao.findAll();
+    }
+
     public int findRoom(String co) {
-        if(infoDao.findRoom(co) != null)
+        if(infoDao.findRoom(co) > 0)
             return 1;
         return 0;
     }

@@ -13,10 +13,13 @@ public class InfoController {
     @Autowired
     private InfoService infoService;
 
-    @GetMapping("/find/room")
-    public int findRoom(@PathVariable String co) { return infoService.findRoom(co); }
+    @GetMapping
+    public List<InfoVO> findAll() { return infoService.findAll(); }
 
-    @GetMapping("/find/user")
+    @GetMapping("/find/room")
+    public int findRoom(@RequestParam("co") String co) { return infoService.findRoom(co); }
+
+    @GetMapping("/find/user/{co}")
     public List<InfoVO> findUser(@PathVariable String co) { return infoService.findUser(co); }
 
     @PostMapping("/enter/room")
