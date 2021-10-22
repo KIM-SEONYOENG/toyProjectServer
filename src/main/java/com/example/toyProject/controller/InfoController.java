@@ -16,8 +16,8 @@ public class InfoController {
     @GetMapping
     public List<InfoVO> findAll() { return infoService.findAll(); }
 
-    @GetMapping("/find/room")
-    public int findRoom(@RequestParam("co") String co) { return infoService.findRoom(co); }
+    @GetMapping("/find/room/{co}")
+    public int findRoom(@PathVariable String co) { return infoService.findRoom(co); }
 
     @GetMapping("/find/user/{co}")
     public List<InfoVO> findUser(@PathVariable String co) { return infoService.findUser(co); }
